@@ -16,6 +16,7 @@ macro_rules! arena_types {
             )>,
             [few] mir_keys: rustc::util::nodemap::DefIdSet,
             [decode] specialization_graph: rustc::traits::specialization_graph::Graph,
+            [decode] mir_const_qualif: rustc_data_structures::bit_set::BitSet<rustc::mir::Local>,
         ], $tcx);
     )
 }
